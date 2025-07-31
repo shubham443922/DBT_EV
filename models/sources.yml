@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: ev
+    database: NZ_EV_ANALYTICS
+    Schema: DBT_EV
+    tables:
+      - name: EV_CHARGING_STATION
+      
+      - name: EV_REGISTER
