@@ -1,5 +1,3 @@
-{{ config(materialized='view') }}
-
 SELECT
   registration_year,
   COUNT(*) AS ev_count

@@ -1,5 +1,3 @@
-{{ config(materialized='view') }}
-
 /*
 SELECT
   TRY_TO_NUMBER(objectid) AS objectid,

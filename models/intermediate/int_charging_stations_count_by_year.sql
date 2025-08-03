@@ -1,6 +1,4 @@
 
-{{ config(materialized='view') }}
-
 SELECT
   EXTRACT(YEAR FROM operational_date) AS year,
   COUNT(*) AS station_count

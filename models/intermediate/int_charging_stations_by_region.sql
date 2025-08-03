@@ -1,5 +1,3 @@
-{{ config(materialized='table') }}
-
 SELECT
   name as region,
   COUNT(*) AS charger_count
