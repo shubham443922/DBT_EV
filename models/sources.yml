@@ -1,10 +1,12 @@
 version: 2
 
 sources:
-  - name: ev
-    database: NZ_EV_ANALYTICS
-    Schema: DBT_EV
+  - name: staging                      # name used in dbt (can be "staging" or "raw" — up to you)
+    database: NZ_EV_ANALYTICS      # your actual Snowflake DB
+    schema: RAW                    # <-- must be lowercase key: `schema`, value can be uppercase
     tables:
-      - name: EV_CHARGING_STATION
-      
-      - name: EV_REGISTER
+      - name: RAW_EV_CHARGING_STATION
+        description: "EV Roam charging station JSON data from data.govt.nz"
+
+      - name: RAW_EV_REGISTER
+        description: "Raw Motor Vehicle Register data ingested from CSV"
