@@ -42,6 +42,8 @@ SELECT
   NZ_ASSEMBLED
 FROM {{ source('staging', 'RAW_EV_REGISTER') }}
 
+--MY change on 14-08-2025
+
 
 
 
